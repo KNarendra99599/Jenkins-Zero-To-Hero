@@ -45,7 +45,7 @@ pipeline {
         }
       }
     }
-    stage('Update Deployment File') {
+    /*stage('Update Deployment File') {
         environment {
             GIT_REPO_NAME = "Jenkins-Zero-To-Hero"
             GIT_USER_NAME = "KNarendra99599"
@@ -62,7 +62,7 @@ pipeline {
                     git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
                 '''
             }
-        }
+        }*/
     }
   }
 }
