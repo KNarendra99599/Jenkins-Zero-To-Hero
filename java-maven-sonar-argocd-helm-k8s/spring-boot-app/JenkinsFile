@@ -6,7 +6,8 @@ pipeline {
   stages {
     stage('mvn install') {
       steps {
-        sh 'mvn install'
+        dir('/path/to/project/directory') {
+        sh "mvn install"
       }
     }
 
