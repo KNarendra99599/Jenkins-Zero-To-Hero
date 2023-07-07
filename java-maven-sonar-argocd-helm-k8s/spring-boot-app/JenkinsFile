@@ -9,7 +9,7 @@ pipeline {
         sh "mvn install"
       }
     }
-       
+    stage('Checkout') {
       steps {
         sh 'echo passed'
         //git branch: 'main', url: 'https://github.com/KNarendra99599/Jenkins-Zero-To-Hero.git'
