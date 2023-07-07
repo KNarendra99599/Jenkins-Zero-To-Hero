@@ -9,20 +9,6 @@ pipeline {
         sh 'mvn install'
       }
     }
-    stage('Checkout') {
-      steps {
-        sh 'echo passed'
-        //git branch: 'main', url: 'https://github.com/KNarendra99599/Jenkins-Zero-To-Hero.git'
-      }
-    }
-
-    stage('Build and Test') {
-      steps {
-        sh 'ls -ltr'
-        // build the project and create a JAR file
-        sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
-      }
-    }
 
   }
 }
