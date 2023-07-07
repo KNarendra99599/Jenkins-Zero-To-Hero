@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('mvn install') {
       steps {
-        sh "mvn install"
+        sh 'mvn install'
       }
     }
     stage('Checkout') {
