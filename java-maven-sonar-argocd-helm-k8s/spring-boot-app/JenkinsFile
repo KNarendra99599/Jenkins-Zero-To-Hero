@@ -8,8 +8,10 @@ pipeline {
       steps {
         dir('/path/to/project/directory') {
         sh "mvn install"
+
+        }
       }
-    }
+   }
 
   }
 }
