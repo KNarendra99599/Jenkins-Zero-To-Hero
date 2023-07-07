@@ -4,9 +4,13 @@ pipeline {
       maven 'Maven-3.9.3'
   }
   stages {
-    stage('Checkout') {
+    stage('mvn install') {
       steps {
         sh "mvn install"
+      }
+    }
+       
+      steps {
         sh 'echo passed'
         //git branch: 'main', url: 'https://github.com/KNarendra99599/Jenkins-Zero-To-Hero.git'
       }
